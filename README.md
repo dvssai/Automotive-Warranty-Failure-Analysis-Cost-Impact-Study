@@ -1,65 +1,30 @@
-Project Title: Automotive Warranty Failure Analysis & Cost Impact Study
-Overview
+x# Automotive Warranty Failure Analysis
 
-This project analyzes 100 real automotive warranty service records to identify failure patterns, cost drivers, and part-level reliability issues. The focus is on steering wheel–related warranty claims, where a significant number of repairs result in full component replacement — suggesting systematic manufacturing or supplier quality gaps, not random customer usage.
+This project analyzes 100 automotive warranty repair cases to identify failure patterns, cost drivers, and quality issues, with a primary focus on steering wheel-related claims.
 
-Objectives
+## Key Findings
+- **78%** of repairs resulted in full steering wheel replacement → indicates **design or supplier quality leakage**.
+- **Full-Size Truck platform** accounts for **52%** of affected vehicles → high financial exposure.
+- **Average repair cost:** $531 per case → Sample = **$53,100+** cost burn.
+- **25% of failures occur within 6 months** → early-life failures impacting customer satisfaction.
+- Complaint text categorized into:
+  - Material Damage
+  - Heating Failure
+  - Driver Assist Issues
+  - Horn Switch Failures
+  - Steering Noise
 
-Analyze warranty claim data to detect failure mode patterns
+## Business Impact
+Unnecessary steering wheel replacements drive cost, delay service times, and damage perceived vehicle quality. Early failure patterns suggest process or material control issues, not user behavior.
 
-Identify parts and labor operations driving cost escalation
+## Recommendations
+- **Immediate:** Audit steering wheel supplier quality.
+- **Short-Term:** Tighten adhesive, stitching, and trim material validation at key plants.
+- **Mid-Term:** Review heated steering module design for reliability under varying use conditions.
 
-Quantify repair cost impact at platform and plant levels
+## Tech Stack
+- Python (Pandas, NumPy)
+- Plotly, Matplotlib, Seaborn
+- Jupyter Notebook
 
-Convert unstructured customer complaint text into meaningful failure categories
 
-Provide data-backed recommendations for quality and cost reduction
-
-Key Insights
-Insight	Business Impact
-78% of cases required complete steering wheel replacement	Indicates design/manufacturing quality leakage
-Full-Size Trucks = 52% of all affected vehicles	High-margin segments are absorbing avoidable warranty cost
-Avg repair cost = $531 per case	$53k+ burn rate in just the sample window
-25% failures occur within first 6 months	Early-life failures damage brand trust & drive repeat dealer visits
-Complaint themes include Material Damage, Heating Faults, Driver Assist Issues, Horn Switch Faults, and Steering Noise	Clear direction for root cause isolation and design review
-Tech Stack
-Area	Tools Used
-Data Processing	Python (Pandas, NumPy)
-Visualization	Matplotlib, Seaborn, Plotly
-Text Categorization	Custom NLP keyword tagging
-Output	Jupyter Notebook & HTML/PDF Reports
-Data Workflow
-
-Data Cleaning
-
-Missing value treatment
-
-Column normalization
-
-Outlier detection via IQR approach
-
-Exploratory Data Analysis
-
-Platform-level distribution
-
-Part failure frequency mapping
-
-Date-wise cost aggregation
-
-Region and plant-level comparisons
-
-Failure Mode Tagging (NLP)
-
-Categorized customer complaint text into structured failure modes
-
-Cost & Business Impact Interpretation
-
-Identified high-impact parts and regions
-
-Recommendations
-
-Immediate: Audit steering wheel suppliers for Full-Size Truck platforms.
-
-Short-term: Strengthen material & stitching quality checks.
-
-Mid-term: Conduct design/thermal control review for heated steering modules.
